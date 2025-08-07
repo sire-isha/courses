@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Isha's Online Courses</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Isha Academy 🎓</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Courses</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Explore Our Courses</h2>
+    <div id="filter">
+      <button onclick="filterCourses('all')">All</button>
+      <button onclick="filterCourses('data')">Data Science</button>
+      <button onclick="filterCourses('web')">Web Development</button>
+      <button onclick="filterCourses('ai')">AI & ML</button>
+    </div>
+
+    <section id="courses-container">
+      <!-- Course Cards Here -->
+      <div class="course-card data">
+        <img src="https://via.placeholder.com/300x150" alt="Course Image" />
+        <h3>Python for Data Science</h3>
+        <p>Learn Python from scratch and become a data ninja 🐍.</p>
+        <button onclick="enroll('Python for Data Science')">Enroll Now</button>
+      </div>
+
+      <div class="course-card web">
+        <img src="https://via.placeholder.com/300x150" alt="Course Image" />
+        <h3>HTML & CSS Bootcamp</h3>
+        <p>Master the web-building basics and create stunning websites.</p>
+        <button onclick="enroll('HTML & CSS Bootcamp')">Enroll Now</button>
+      </div>
+
+      <div class="course-card ai">
+        <img src="https://via.placeholder.com/300x150" alt="Course Image" />
+        <h3>Intro to AI</h3>
+        <p>Dive into the world of artificial intelligence and train robots 🤖.</p>
+        <button onclick="enroll('Intro to AI')">Enroll Now</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Isha Academy. All brains reserved 🧠✨</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
